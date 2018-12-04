@@ -53,6 +53,11 @@ public class ActionMenu extends ViewGroup{
         init(context, attrs);
     }
 
+
+    protected boolean useFractorAnimation(){
+        return true;
+    }
+
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         for (int i = 0; i < childViewCount; i++) {
@@ -145,7 +150,7 @@ public class ActionMenu extends ViewGroup{
      */
     private void buttonItemOpenAnimation(int index,ActionButtonItems view) {
         if (index == 0) {
-            view.startFactorAnimation(duration / 6, 0, 1);
+           if(useFractorAnimation())view.startFactorAnimation(duration / 6, 0, 1);
         } else {
             ViewPropertyAnimator propertyAnimator = view.animate().alpha(1).
                     setInterpolator(new OvershootInterpolator()).setDuration(duration / 3);
@@ -171,7 +176,7 @@ public class ActionMenu extends ViewGroup{
             propertyAnimator.start();
 
             // start factor animation
-            view.startFactorAnimation(duration / 6, 0, -1);
+            if(useFractorAnimation())view.startFactorAnimation(duration / 6, 0, -1);
         }
         view.setOpen(isOpen);
     }
@@ -181,7 +186,7 @@ public class ActionMenu extends ViewGroup{
      */
     private void buttonItemCloseAnimation(int index, final ActionButtonItems view) {
         if (index == 0) {
-            view.startFactorAnimation(duration / 6, 0, -1);
+            if(useFractorAnimation())view.startFactorAnimation(duration / 6, 0, -1);
         } else {
             ViewPropertyAnimator propertyAnimator = view.animate().alpha(0).setDuration(duration / 3);
 
