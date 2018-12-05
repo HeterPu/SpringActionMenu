@@ -1,15 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:support-media-compat-24.2.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/e0774fce4abd592a4191d1f114684e3c8dd2279b/output/jars/libs/internal_impl-24.2.1.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/e0774fce4abd592a4191d1f114684e3c8dd2279b/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/e0774fce4abd592a4191d1f114684e3c8dd2279b/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/41ab55672f8304ec82a90d2fce054e7c73cdb810/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/41ab55672f8304ec82a90d2fce054e7c73cdb810/output/jars/libs/internal_impl-24.2.1.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/41ab55672f8304ec82a90d2fce054e7c73cdb810/output/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-media-compat/24.2.1/support-media-compat-24.2.1-javadoc.jar!/" />
+      <root url="jar://G:/ANDROIDSDK/SDK/extras/android/m2repository/com/android/support/support-media-compat/24.2.1/support-media-compat-24.2.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-media-compat/24.2.1/support-media-compat-24.2.1-sources.jar!/" />
+      <root url="jar://G:/ANDROIDSDK/SDK/extras/android/m2repository/com/android/support/support-media-compat/24.2.1/support-media-compat-24.2.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

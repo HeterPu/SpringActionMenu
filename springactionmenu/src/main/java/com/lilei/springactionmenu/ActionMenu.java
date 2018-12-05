@@ -186,7 +186,12 @@ public class ActionMenu extends ViewGroup{
      */
     private void buttonItemCloseAnimation(int index, final ActionButtonItems view) {
         if (index == 0) {
-            if(useFractorAnimation())view.startFactorAnimation(duration / 6, 0, -1);
+            if(useFractorAnimation()){
+                view.startFactorAnimation(duration / 6, 0, -1);
+            }else {
+                view.setOpen(isOpen);
+                view.invalidate();
+            }
         } else {
             ViewPropertyAnimator propertyAnimator = view.animate().alpha(0).setDuration(duration / 3);
 
